@@ -1,5 +1,5 @@
 const { Builder, By } = require('selenium-webdriver');
-const StartPage = require('../pages/startPage.js');
+const StartPage = require('../../pages/start/startPage.js');
 const { describe, it } = require('mocha');
 
 describe('Testes da Página Inicial da Lacrei Saúde', function() {
