@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test:start": "mocha tests/start.test.js"
+    "test:start": "mocha tests/start/start.test.js",
+    "test:login": "mocha tests/login/login.test.js",
+    "test:securityPrivacy": "mocha tests/securityPrivacy/securityPrivacy.test.js"
   },
   "keywords": [],
   "author": "Bruno Soares Ribeiro",
