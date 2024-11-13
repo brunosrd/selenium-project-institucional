@@ -7,13 +7,11 @@ describe('Testes da Página de Segurança e Privacidade da Lacrei Saúde', funct
     let driver;
     let securityPrivacyPage;
 
-    // Configuração antes de todos os testes
     before(async function() {
         driver = await new Builder().forBrowser('chrome').build();
         securityPrivacyPage = new SecurityPrivacyPage(driver);
     });
 
-    // Fechar o navegador após todos os testes
     after(async function() {
         if (driver) {
             await driver.quit();
@@ -21,22 +19,20 @@ describe('Testes da Página de Segurança e Privacidade da Lacrei Saúde', funct
     });
 
     it('Deve acessar a seção "Termos de Uso"', async function() {
-        await securityPrivacyPage.open();
-        await securityPrivacyPage.scrollToTermsOfUse();
-        await securityPrivacyPage.clickAccessTermsOfUse();
+        await securityPrivacyPage.abrir();
+        await securityPrivacyPage.rolarParaTermosDeUso();
+        await securityPrivacyPage.clicarAcessarTermosDeUso();
     });
 
     it('Deve acessar a seção "Política de Privacidade"', async function() {
-        await securityPrivacyPage.open();
-        await securityPrivacyPage.scrollToPrivacyPolicy();
-        await securityPrivacyPage.clickAccessPrivacyPolicy();
+        await securityPrivacyPage.abrir();
+        await securityPrivacyPage.rolarParaPoliticaDePrivacidade();
+        await securityPrivacyPage.clicarAcessarPoliticaDePrivacidade();
     });
 
     it('Deve acessar a seção "Direitos do Titular"', async function() {
-        await securityPrivacyPage.open();
-        await securityPrivacyPage.scrollToRightsHolder();
-        await securityPrivacyPage.clickRequestRightsHolder();
+        await securityPrivacyPage.abrir();
+        await securityPrivacyPage.rolarParaDireitosDoTitular();
+        await securityPrivacyPage.clicarSolicitarDireitosDoTitular();
     });
-
-
 });

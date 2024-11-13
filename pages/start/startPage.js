@@ -6,12 +6,11 @@ class StartPage {
         this.url = 'https://staging.lacreisaude.com.br/';
     }
 
-    async open() {
+    async abrir() {
         await this.driver.get(this.url);
     }
 
-
-    async clickQuemSomos() {
+    async clicarQuemSomos() {
         const elements = await this.driver.findElements(By.css("[aria-hidden='false']"));
         const element = elements[1];
         await this.driver.wait(until.elementLocated(By.css("[aria-hidden='false']")), 5000); // Espera até que o elemento esteja localizado
@@ -20,39 +19,39 @@ class StartPage {
         await element.click();
     }
 
-    async clickAjuda() {
+    async clicarAjuda() {
         await (await this.driver.findElements(By.css("[aria-hidden='false']")))[2].click();
     }
 
-    async clickParaPacientes() {
+    async clicarParaPacientes() {
         await this.driver.findElement(By.css("[aria-label='Ir para página de login do paciente']")).click();
     }
 
-    async clickParaProfissionais() {
+    async clicarParaProfissionais() {
         await this.driver.findElement(By.css("[aria-label='Ir para página de login do profissional da saúde']")).click();
     }
 
-    async clickEntenda() {
+    async clicarEntenda() {
         await this.driver.findElement(By.css("[aria-label='Acesse nossas informações sobre privacidade de segurança']")).click();
     }
 
-    async clickConheca() {
+    async clicarConheca() {
         await this.driver.findElement(By.css("[aria-label='Conheça nossos recursos de acessibilidade']")).click();
     }
 
-    async clickAcesse() {
+    async clicarAcesse() {
         await this.driver.findElement(By.css("[aria-label='Acesse nossas dúvidas frequentes']")).click();
     }
 
-    async verifyUrlContains(substring) {
+    async verificarUrlContem(substring) {
         await this.driver.wait(until.urlContains(substring), 5000);
     }
 
-    async verifyTitleIs(title) {
+    async verificarTitulo(title) {
         await this.driver.wait(until.titleIs(title), 5000);
     }
 
-    async verifyH1IsPresent() {
+    async verificarH1Presente() {
         await this.driver.wait(until.elementLocated(By.css('h1')), 5000);
     }
 }

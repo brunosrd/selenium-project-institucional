@@ -6,20 +6,20 @@ class LoginPage {
         this.url = 'https://paciente-staging.lacreisaude.com.br/';
     }
 
-    async open() {
+    async abrir() {
         await this.driver.get(this.url);
     }
 
-    async enterCredentials(email, password) {
+    async inserirCredenciais(email, senha) {
         await this.driver.findElement(By.css('#email')).sendKeys(email);
-        await this.driver.findElement(By.css('#password')).sendKeys(password);
+        await this.driver.findElement(By.css('#password')).sendKeys(senha);
     }
 
-    async submitLogin() {
+    async enviarLogin() {
         await this.driver.findElement(By.css("[aria-label='Entrar na Lacrei Saúde']")).click();
     }
 
-    async verifyLoginSuccess() {
+    async verificarSucessoLogin() {
         await this.driver.wait(until.urlContains('buscar-profissional'), 5000);
     }
 }
