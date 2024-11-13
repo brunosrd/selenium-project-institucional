@@ -56,6 +56,19 @@ npm install -g webdriver-manager
 webdriver-manager update
 ```
 
+### Ferramentas Utilizadas
+
+- Selenium WebDriver
+- Navegador Chrome
+- Visual Studio Code
+- Github
+- Notion
+
+### Configuração do Ambiente
+
+- Sistema Operacional: Windows 10
+- Versão do Navegador: Chrome 114
+
 ## Scripts de Teste
 
 ### Testes da Página Inicial
@@ -101,12 +114,14 @@ npm run test:help
 ## Descrição dos Arquivos
 
 ### Pages
+
 1. `loginPage.js`: Contém a classe LoginPage com métodos para interagir com a página de login.
 2. `securityPrivacyPage.js`: Contém a classe SecurityPrivacyPage com métodos para interagir com a página de segurança e privacidade.
 3. `startPage.js`: Contém a classe StartPage com métodos para interagir com a página inicial.
 4. `helpPage.js`: Contém a classe helpPage com métodos para interagir com o épico ajuda.
 
 ### Tests
+
 1. `login.test.js`: Testes automatizados para a página de login.
 2. `securityPrivacy.test.js`: Testes automatizados para a página de segurança e privacidade.
 3. `start.test.js`: Testes automatizados para a página inicial.
