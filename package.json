@@ -5,7 +5,8 @@
   "scripts": {
     "test:start": "mocha tests/start/start.test.js",
     "test:login": "mocha tests/login/login.test.js",
-    "test:securityPrivacy": "mocha tests/securityPrivacy/securityPrivacy.test.js"
+    "test:securityPrivacy": "mocha tests/securityPrivacy/securityPrivacy.test.js",
+    "test:help": "mocha tests/help/help.test.js"
   },
   "keywords": [],
   "author": "Bruno Soares Ribeiro",

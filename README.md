@@ -16,15 +16,21 @@ selenium-project-institucional/
 │   ├── securityPrivacyPage/
 │   │   └── securityPrivacyPage.js
 │   └── start/
-│       └── startPage.js
+│   │    └── startPage.js
+│   └── help/
+│       └── helpPage.js
 ├── tests/
 │   ├── login/
 │   │   └── login.test.js
 │   ├── securityPrivacy/
 │   │   └── securityPrivacy.test.js
 │   └── start/
-│       └── start.test.js
-├── package.json
+│   │    └── start.test.js
+│   └── help/
+│       └── help.test.js
+├── .gitignore
+└── package.json
+├── package-lock.json
 └── README.md
 ```
 
@@ -62,7 +68,7 @@ Para executar os testes da página inicial:
 npm run test:start
 ```
 
-### Testes de Login
+### Testes em Login
 
 Arquivo: `tests/login/login.test.js`
 
@@ -72,7 +78,7 @@ Para executar os testes de login:
 npm run test:login
 ```
 
-### Testes de Segurança e Privacidade
+### Testes em Segurança e Privacidade
 
 Arquivo: `tests/securityPrivacy/securityPrivacy.test.js`
 
@@ -82,17 +88,29 @@ Para executar os testes de segurança e privacidade:
 npm run test:securityPrivacy
 ```
 
+### Testes em Ajuda
+
+Arquivo: `tests/help/help.test.js`
+
+Para executar os testes em ajuda:
+
+```bash
+npm run test:help
+```
+
 ## Descrição dos Arquivos
 
 ### Pages
 1. `loginPage.js`: Contém a classe LoginPage com métodos para interagir com a página de login.
 2. `securityPrivacyPage.js`: Contém a classe SecurityPrivacyPage com métodos para interagir com a página de segurança e privacidade.
 3. `startPage.js`: Contém a classe StartPage com métodos para interagir com a página inicial.
+4. `helpPage.js`: Contém a classe helpPage com métodos para interagir com o épico ajuda.
 
 ### Tests
 1. `login.test.js`: Testes automatizados para a página de login.
 2. `securityPrivacy.test.js`: Testes automatizados para a página de segurança e privacidade.
 3. `start.test.js`: Testes automatizados para a página inicial.
+4. `help.test.js`: Testes automatizados para o épico ajuda.
 
 ## Executando os Testes
 
