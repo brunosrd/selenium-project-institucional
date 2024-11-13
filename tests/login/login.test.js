@@ -7,13 +7,11 @@ describe('Testes de Login da Lacrei Saúde', function() {
     let driver;
     let loginPage;
 
-    // Configuração antes de todos os testes
     before(async function() {
         driver = await new Builder().forBrowser('chrome').build();
         loginPage = new LoginPage(driver);
     });
 
-    // Fechar o navegador após todos os testes
     after(async function() {
         if (driver) {
             await driver.quit();
@@ -21,9 +19,9 @@ describe('Testes de Login da Lacrei Saúde', function() {
     });
 
     it('Deve realizar login com sucesso', async function() {
-        await loginPage.open();
-        await loginPage.enterCredentials('brunosr099@outlook.com', 'Teste@123');
-        await loginPage.submitLogin();
-        await loginPage.verifyLoginSuccess();
+        await loginPage.abrir();
+        await loginPage.inserirCredenciais('brunosr099@outlook.com', 'Teste@123');
+        await loginPage.enviarLogin();
+        await loginPage.verificarSucessoLogin();
     });
 });
