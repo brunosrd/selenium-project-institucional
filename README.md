@@ -8,7 +8,7 @@ Este projeto utiliza Selenium WebDriver para automatizar testes de interface de 
 
 ## Estrutura do Projeto
 
-\```plaintext
+```plaintext
 selenium-project-institucional/
 ├── pages/
 │   ├── login/
@@ -26,29 +26,29 @@ selenium-project-institucional/
 │       └── start.test.js
 ├── package.json
 └── README.md
-\```
+```
 
 ## Instalação
 
 1. Clone o repositório:
 
-\```bash
+```bash
 git clone https://github.com/brunosrd/selenium-project-institucional.git
 cd selenium-project-institucional
-\```
+```
 
 2. Instale as dependências:
 
-\```bash
+```bash
 npm install
-\```
+```
 
 3. Instale o WebDriver Manager:
 
-\```bash
+```bash
 npm install -g webdriver-manager
 webdriver-manager update
-\```
+```
 
 ## Scripts de Teste
 
@@ -58,9 +58,9 @@ Arquivo: `tests/start/start.test.js`
 
 Para executar os testes da página inicial:
 
-\```bash
+```bash
 npm run test:start
-\```
+```
 
 ### Testes de Login
 
@@ -68,9 +68,9 @@ Arquivo: `tests/login/login.test.js`
 
 Para executar os testes de login:
 
-\```bash
+```bash
 npm run test:login
-\```
+```
 
 ### Testes de Segurança e Privacidade
 
@@ -78,9 +78,9 @@ Arquivo: `tests/securityPrivacy/securityPrivacy.test.js`
 
 Para executar os testes de segurança e privacidade:
 
-\```bash
+```bash
 npm run test:securityPrivacy
-\```
+```
 
 ## Descrição dos Arquivos
 
@@ -98,9 +98,9 @@ npm run test:securityPrivacy
 
 Certifique-se de que o WebDriver Manager está atualizado e em execução:
 
-\```bash
+```bash
 webdriver-manager start
-\```
+```
 
 Em seguida, execute os scripts de teste conforme descrito acima.
 
