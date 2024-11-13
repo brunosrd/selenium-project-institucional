@@ -8,7 +8,7 @@ Este projeto utiliza Selenium WebDriver para automatizar testes de interface de 
 
 ## Estrutura do Projeto
 
-\```bash
+\```plaintext
 selenium-project-institucional/
 ├── pages/
 │   ├── login/
