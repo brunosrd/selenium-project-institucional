@@ -88,7 +88,7 @@ npm install --save-dev artillery
 
 ### Testes da Página Inicial
 
-Arquivo: `tests/start/start.test.js` e  `tests/start/start`
+Arquivo: `tests/start/start.test.js` e  `tests/start/startPerformance.test.js`
 
 Para executar os testes da página inicial:
 
