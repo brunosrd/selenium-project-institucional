@@ -1,0 +1,12 @@
+config:
+  target: "https://paciente-staging.lacreisaude.com.br/"
+  phases:
+    - duration: 60
+      arrivalRate: 10
+scenarios:
+  - flow:
+      - post:
+          url: "/login"
+          json:
+            email: "brunosr099@outlook.com"
+            password: "Teste@123"

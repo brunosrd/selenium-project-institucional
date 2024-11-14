@@ -22,6 +22,7 @@ selenium-project-institucional/
 ├── tests/
 │   ├── login/
 │   │   └── login.test.js
+│   │   └── loginPerformance.test.js
 │   ├── securityPrivacy/
 │   │   └── securityPrivacy.test.js
 │   └── start/
@@ -56,6 +57,12 @@ npm install -g webdriver-manager
 webdriver-manager update
 ```
 
+4. Instale o Artillery
+
+```bash
+npm install --save-dev artillery
+```
+
 ### Ferramentas Utilizadas
 
 - Selenium WebDriver
@@ -63,6 +70,10 @@ webdriver-manager update
 - Visual Studio Code
 - Github
 - Notion
+- npm
+- Mocha
+- Git
+- Artillery
 
 ### Configuração do Ambiente
 
@@ -74,21 +85,27 @@ webdriver-manager update
 ### Testes da Página Inicial
 
 Arquivo: `tests/start/start.test.js`
+Arquivo: `tests/start/start`
 
 Para executar os testes da página inicial:
 
 ```bash
 npm run test:start
+npm run test:startPerformance
 ```
 
 ### Testes em Login
 
 Arquivo: `tests/login/login.test.js`
+Arquivo: `tests/login/loginPerformance.test.js`
+Arquivo: `loginLoadTest.yml`
 
 Para executar os testes de login:
 
 ```bash
 npm run test:login
+npm run test:loginPerformance
+npm run test:loginLoad
 ```
 
 ### Testes em Segurança e Privacidade
@@ -132,7 +149,7 @@ npm run test:help
 Certifique-se de que o WebDriver Manager está atualizado e em execução:
 
 ```bash
-webdriver-manager start
+npx webdriver-manager start
 ```
 
 Em seguida, execute os scripts de teste conforme descrito acima.

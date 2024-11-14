@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test:start": "mocha tests/start/start.test.js",
+    "test:startPerformance": "mocha tests/start/startPerformance.test.js",
     "test:login": "mocha tests/login/login.test.js",
+    "test:loginPerformance": "mocha tests/login/loginPerformance.test.js",
+    "test:loginLoad": "artillery run loginLoadTest.yml",
     "test:securityPrivacy": "mocha tests/securityPrivacy/securityPrivacy.test.js",
     "test:help": "mocha tests/help/help.test.js"
   },
@@ -17,6 +20,7 @@
     "webdriver-manager": "^12.1.9"
   },
   "devDependencies": {
+    "artillery": "^2.0.21",
     "mocha": "^10.8.2"
   }
 }
