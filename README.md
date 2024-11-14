@@ -99,8 +99,7 @@ npm run test:startPerformance
 
 ### Testes em Login
 
-Arquivo: `tests/login/login.test.js` e `tests/login/loginPerformance.test.js`
-Arquivo: `loginLoadTest.yml`
+Arquivo: `tests/login/login.test.js`, `tests/login/loginPerformance.test.js` e `loginLoadTest.yml`
 
 Para executar os testes de login:
 
@@ -112,8 +111,7 @@ npm run test:loginLoad
 
 ### Testes em Segurança e Privacidade
 
-Arquivo: `tests/securityPrivacy/securityPrivacy.test.js`
-Arquivo: `tests/securityPrivacy/securityPrivacyPerformance.test.js`
+Arquivo: `tests/securityPrivacy/securityPrivacy.test.js` e `tests/securityPrivacy/securityPrivacyPerformance.test.js`
 
 Para executar os testes de segurança e privacidade:
 
@@ -124,8 +122,7 @@ npm run test:securityPrivacyPerformance
 
 ### Testes em Ajuda
 
-Arquivo: `tests/help/help.test.js`
-Arquivo: `tests/help/helpPagePerformance.test.js`
+Arquivo: `tests/help/help.test.js` e `tests/help/helpPagePerformance.test.js`
 
 Para executar os testes em ajuda:
 
@@ -146,9 +143,13 @@ npm run test:helpPerformance
 ### Tests
 
 1. `login.test.js`: Testes automatizados para a página de login.
-2. `securityPrivacy.test.js`: Testes automatizados para a página de segurança e privacidade.
-3. `start.test.js`: Testes automatizados para a página inicial.
-4. `help.test.js`: Testes automatizados para o épico ajuda.
+2. `loginPerformance.test.js`: Teste automatizados de performance na página de login
+3. `securityPrivacy.test.js`: Testes automatizados para a página de segurança e privacidade.
+4. `securityPrivacyPerformance.test.js`: Teste automatizado de performance para a página de segurança e privacidade.
+5. `start.test.js`: Testes automatizados para a página inicial.
+6. `startPerformance.test.js`: Testes automatizados de performance para a página inicial.
+7. `help.test.js`: Testes automatizados para o épico ajuda.
+8. `helpPerformance.test.js`: Testes automatizados de performance para o épico ajuda.
 
 ## Executando os Testes
 
