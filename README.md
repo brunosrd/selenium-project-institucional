@@ -61,7 +61,13 @@ npm install -g webdriver-manager
 webdriver-manager update
 ```
 
-4. Instale o Artillery
+4. Instale o Mocha
+
+```bash
+npm install --save-dev mocha
+```
+
+5. Instale o Artillery
 
 ```bash
 npm install --save-dev artillery
