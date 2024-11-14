@@ -88,7 +88,7 @@ npm install --save-dev artillery
 
 ### Testes da Página Inicial
 
-Arquivo: `tests/start/start.test.js`
+Arquivo: `tests/start/start.test.js`\**
 Arquivo: `tests/start/start`
 
 Para executar os testes da página inicial:
@@ -100,7 +100,7 @@ npm run test:startPerformance
 
 ### Testes em Login
 
-Arquivo: `tests/login/login.test.js`
+Arquivo: `tests/login/login.test.js`\**
 Arquivo: `tests/login/loginPerformance.test.js`
 Arquivo: `loginLoadTest.yml`
 
