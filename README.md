@@ -144,12 +144,13 @@ npm run test:helpPerformance
 
 1. `login.test.js`: Testes automatizados para a página de login.
 2. `loginPerformance.test.js`: Teste automatizados de performance na página de login
-3. `securityPrivacy.test.js`: Testes automatizados para a página de segurança e privacidade.
-4. `securityPrivacyPerformance.test.js`: Teste automatizado de performance para a página de segurança e privacidade.
-5. `start.test.js`: Testes automatizados para a página inicial.
-6. `startPerformance.test.js`: Testes automatizados de performance para a página inicial.
-7. `help.test.js`: Testes automatizados para o épico ajuda.
-8. `helpPerformance.test.js`: Testes automatizados de performance para o épico ajuda.
+3. `loginLoadTest.yml`: Teste de Carga na página de Login.
+4. `securityPrivacy.test.js`: Testes automatizados para a página de segurança e privacidade.
+5. `securityPrivacyPerformance.test.js`: Teste automatizado de performance para a página de segurança e privacidade.
+6. `start.test.js`: Testes automatizados para a página inicial.
+7. `startPerformance.test.js`: Testes automatizados de performance para a página inicial.
+8. `help.test.js`: Testes automatizados para o épico ajuda.
+9. `helpPerformance.test.js`: Testes automatizados de performance para o épico ajuda.
 
 ## Executando os Testes
 
