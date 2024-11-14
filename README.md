@@ -25,11 +25,15 @@ selenium-project-institucional/
 │   │   └── loginPerformance.test.js
 │   ├── securityPrivacy/
 │   │   └── securityPrivacy.test.js
+│   │   └── securityPrivacyPerformance.test.js
 │   └── start/
 │   │    └── start.test.js
+│   │    └── startPerformance.test.js
 │   └── help/
 │       └── help.test.js
+│       └── helpPerformanc.js
 ├── .gitignore
+├── loginLoadTeste.yml
 └── package.json
 ├── package-lock.json
 └── README.md

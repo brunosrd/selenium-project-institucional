@@ -9,6 +9,7 @@
     "test:loginPerformance": "mocha tests/login/loginPerformance.test.js",
     "test:loginLoad": "artillery run loginLoadTest.yml",
     "test:securityPrivacy": "mocha tests/securityPrivacy/securityPrivacy.test.js",
+    "test:securityPrivacyPerformance": "mocha tests/securityPrivacy/securityPrivacyPerformance.test.js",
     "test:help": "mocha tests/help/help.test.js"
   },
   "keywords": [],
