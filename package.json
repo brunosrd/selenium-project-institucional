@@ -10,7 +10,8 @@
     "test:loginLoad": "artillery run loginLoadTest.yml",
     "test:securityPrivacy": "mocha tests/securityPrivacy/securityPrivacy.test.js",
     "test:securityPrivacyPerformance": "mocha tests/securityPrivacy/securityPrivacyPerformance.test.js",
-    "test:help": "mocha tests/help/help.test.js"
+    "test:help": "mocha tests/help/help.test.js",
+    "test:helpPerformance": "mocha tests/help/helpPerformance.test.js"
   },
   "keywords": [],
   "author": "Bruno Soares Ribeiro",

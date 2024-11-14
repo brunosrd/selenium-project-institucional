@@ -31,7 +31,7 @@ selenium-project-institucional/
 │   │    └── startPerformance.test.js
 │   └── help/
 │       └── help.test.js
-│       └── helpPerformanc.js
+│       └── helpPerformance.js
 ├── .gitignore
 ├── loginLoadTeste.yml
 └── package.json
@@ -115,21 +115,25 @@ npm run test:loginLoad
 ### Testes em Segurança e Privacidade
 
 Arquivo: `tests/securityPrivacy/securityPrivacy.test.js`
+Arquivo: `tests/securityPrivacy/securityPrivacyPerformance.test.js`
 
 Para executar os testes de segurança e privacidade:
 
 ```bash
 npm run test:securityPrivacy
+npm run test:securityPrivacyPerformance
 ```
 
 ### Testes em Ajuda
 
 Arquivo: `tests/help/help.test.js`
+Arquivo: `tests/help/helpPagePerformance.test.js`
 
 Para executar os testes em ajuda:
 
 ```bash
 npm run test:help
+npm run test:helpPerformance
 ```
 
 ## Descrição dos Arquivos
