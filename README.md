@@ -1,6 +1,6 @@
 # Selenium Project Institucional
 
-Este projeto utiliza Selenium WebDriver para automatizar testes de interface de usuário para o site da Lacrei Saúde. O projeto inclui testes para a página inicial, login e segurança e privacidade.
+Este projeto utiliza Selenium WebDriver para automatizar testes de interface de usuário para o site da Lacrei Saúde. O projeto inclui testes para a página inicial, login, ajuda e segurança e privacidade.
 
 ## Autor
 
